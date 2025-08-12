@@ -1,0 +1,24 @@
+[project]
+name = "encqa"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "absl-py==2.1.0",
+    "altair==5.3.0",
+    "datasets>=3.2.0",
+    "numpy==1.26.4",
+    "pandas==2.2.2",
+    "pillow>=11.0.0",
+    "scikit-learn>=1.6.1",
+    "scipy==1.13.1",
+    "transformers==4.53.0",
+    "vl-convert-python==1.6.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "reportlab>=4.3.1",
+]

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Meta tags for social media banners, these should be filled in appropriately as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="EncQA: Benchmarking Vision-Language Models on Visual Encodings for Charts" />
+    <meta property="og:title" content="EncQA: Benchmarking Vision-Language Models on Visual Encodings for Charts" />
+    <meta
+      property="og:description"
+      content="EncQA: Benchmarking Vision-Language Models on Visual Encodings for Charts"
+    />
+    <meta property="og:url" content="https://github.com/apple/ml-encqa" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X630-->
+    <meta property="og:image" content="images/encqa_teaser_2.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:title" content="EncQA: Benchmarking Vision-Language Models on Visual Encodings for Charts" />
+    <meta
+      name="twitter:description"
+      content="EncQA: Benchmarking Vision-Language Models on Visual Encodings for Charts"
+    />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X600-->
+    <!-- <meta
+      name="twitter:image"
+      content="images/your_twitter_banner_image.png"
+    /> -->
+    <!-- <meta name="twitter:card" content="summary_large_image" /> -->
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="Visual encodings, visualization understanding tasks, machine chart understanding, vision-language models, model benchmarking" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>EncQA: Benchmarking Vision-Language Models on Visual Encodings for Charts</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@latest/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@latest/dist/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-slider@latest/dist/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@latest/dist/js/bulma-carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-slider@latest/dist/js/bulma-slider.min.js"></script>
+    <script>
+      window.HELP_IMPROVE_VIDEOJS = false;
+
+      $(document).ready(function() {
+          // Check for click events on the navbar burger icon
+
+          var options = {
+              slidesToScroll: 1,
+              slidesToShow: 1,
+              loop: true,
+              infinite: true,
+              autoplay: true,
+              autoplaySpeed: 5000,
+          }
+
+          // Initialize all div with carousel class
+          var carousels = bulmaCarousel.attach('.carousel', options);
+      
+          bulmaSlider.attach();
+
+      })
+    </script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                EncQA: Benchmarking Vision-Language Models on Visual Encodings for Charts
+              </h1>
+              <div class="is-size-5 publication-authors">
+                <!-- Paper authors -->
+                <span class="author-block">
+                  <a href="https://kushinm.com/" target="_blank">Kushin Mukherjee<sup>1</sup></a>,</span>
+                <span class="author-block">
+                  <a href="https://donghaoren.org/" target="_blank">Donghao Ren</a>,
+                  </span
+                >
+                <span class="author-block">
+                  <a href="https://www.domoritz.de/" target="_blank">Dominik Moritz</a>,
+                </span>
+                <span class="author-block">
+                  <a href="http://clome.info" target="_blank">Yannick Assogba</a>
+                </span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <sup>1</sup>Stanford, Apple
+                  <!-- <br />Conference name and year -->
+                </span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- ArXiv abstract Link -->
+                  <span class="link-block">
+                    <a
+                      href="https://arxiv.org/abs/2508.04650v1"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <img src="images/arxiv-logomark-small.svg" alt="" style="height: 18px;">
+                        <!-- <i class="ai ai-arxiv"></i> -->
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+
+                  <!-- Arxiv PDF link -->
+                  <!-- <span class="link-block">
+                    <a
+                      href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span> -->
+
+                 
+
+                  <!-- Dataset link -->
+                  <span class="link-block">
+                    <a
+                      href="https://github.com/apple/ml-encqa"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        🤗
+                        <!-- <i class="fab"></i> -->
+                      </span>
+                      <span>Dataset</span>
+                    </a>
+                  </span>
+
+                   <!-- Supplementary PDF link -->
+                   <span class="link-block">
+                    <a
+                      href="pdfs/supplemental_material_1.pdf"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a
+                      href="https://github.com/apple/ml-encqa"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaser video-->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img src="images/encqa_teaser_2.png" alt="EncQA benchmark overview showing 6 visual encoding types (position, length, area, color quantitative, color nominal, shape) across 6 different chart understanding tasks with example visualizations" />
+          <h2 class="subtitle has-text-centered">
+            EncQA tests VLM visual reasoning capabilities across 6 visual encodings across 8 analytic tasks that are common to charts (6 shown).
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- End teaser video -->
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Multimodal vision-language models (VLMs) continue to show ever-improving scores on chart understanding benchmarks but
+do these improvements truly capture improvements in models’ visual reasoning capabilities? We introduce <b>EncQA</b>, a novel benchmark
+designed to provide systematic coverage of fundamental visual encodings and chart understanding tasks that are crucial for chart
+comprehension. <b>EncQA</b> provides 2,076 synthetic charts paired with 2,250 questions that span six visual encoding channels (position,
+length, area, color quantitative, color nominal, and shape) and six task types (find extrema, retrieve value, find anomaly, filter values,
+compute derived value, and correlate values). Our evaluation of 11 state-of-the-art VLMs &mdash; including proprietary and open-source
+models &mdash; reveals that performance varies significantly across different encoding-task combinations and does not necessarily improve
+with model size. Our results suggest that current approaches to improving chart understanding capabilities may benefit from more
+targeted strategies that address specific visual reasoning gaps beyond simply increasing model and dataset size.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End paper abstract -->
+
+    <!-- Image carousel -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-3 has-text-centered">Examples</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item">
+              <!-- Your image here -->
+              <img src="svgs/images/retrieve_value/area/0_circle.svg" alt="Chart with circles of different sizes representing area encoding, with circles labeled A, B, C, and D for the retrieve value task asking 'What is the value of Var at A?'" />
+              <h2 class="subtitle has-text-centered">
+                What is the value of Var at A?
+              </h2>
+            </div>
+            <div class="item">
+              <!-- Your image here -->
+              <img src="svgs/images/find_extrema/position/0_horizontal.svg" alt="Scatter plot with circles at different vertical positions for the find extrema task asking 'Which circle is closest to the bottom?'" />
+              <h2 class="subtitle has-text-centered">
+                Which circle is closest to the bottom?
+              </h2>
+            </div>
+            <div class="item">
+              <!-- Your image here -->
+              <img src="svgs/images/filter_values/length/0_vertical.svg" alt="Vertical bar chart showing bars of different lengths for the filter values task asking 'Which bar(s) have a value of Var greater than 32?'" />
+              <h2 class="subtitle has-text-centered">
+                Which bar(s) have a value of Var greater than 32?
+              </h2>
+            </div>
+            <div class="item">
+              <!-- Your image here -->
+              <img src="svgs/images/find_anomaly/color_nominal/0_large.svg" alt="Chart with colored circles for the find anomaly task asking 'Which color is an outlier relative to the rest in terms of the number of observations?'" />
+              <h2 class="subtitle has-text-centered">
+                Which color is an outlier relative to the rest in terms of the number of observations?
+              </h2>
+            </div>
+            <div class="item">
+              <!-- Your image here -->
+              <img src="svgs/images/compute_derived_value_relative/length/0_horizontal.svg" alt="Comparison of two horizontal bar charts for the compute derived value relative task asking 'In which chart are the bars longer on average?'" />
+              <h2 class="subtitle has-text-centered">
+                In which chart are the bars longer on average?
+              </h2>
+            </div>
+            <div class="item">
+              <!-- Your image here -->
+              <img src="svgs/images/correlate_values/length/0_horizontal_strong.svg" alt="Grouped Horizontal bar chart with two variables (var1 and var2) using length encoding for the correlate values task asking 'Are the lengths of the bars for var1 and var2 correlated?'" />
+              <h2 class="subtitle has-text-centered">
+                Are the lengths of the bars for var1 and var2 correlated?
+              </h2>
+            </div>
+            <div class="item">
+              <!-- Your image here -->
+              <img src="svgs/images/compute_derived_value_exact/color_quantitative/0.svg" alt="Chart using quantitative color encoding (color intensity/hue representing values) for the compute derived value exact task asking 'What is the average value of Var?'" />
+              <h2 class="subtitle has-text-centered">
+                What is the average value of Var?
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End image carousel -->
+
+    <!-- Results -->
+    <section class="hero is-small is-light">
+      <div class="hero-body">
+        <div class="container model-results">
+          <!-- Results. -->
+          <h2 class="title is-3 has-text-centered">Model Performance on EncQA</h2>
+          <!-- <p class="has-text-centered">See paper for full details!</p> -->
+          <img src="images/encqa_model_results_website.svg" alt="EncQA benchmark results showing performance matrix of various vision-language models across different encoding types and tasks, with red lines indicating random chance performance" />
+          <p class="has-text-centered">
+            EncQA performance for various models in our test suite, split by task and encoding.<br/>
+            Red lines show random chance performance.
+          </p>
+          <p class="has-text-centered">
+            <a href="https://arxiv.org/abs/2508.04650v1" target="_blank">See the paper for details</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End results section -->
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>
+@misc{mukherjee2025encqabenchmarkingvisionlanguagemodels,
+      title={EncQA: Benchmarking Vision-Language Models on Visual Encodings for Charts}, 
+      author={Kushin Mukherjee and Donghao Ren and Dominik Moritz and Yannick Assogba},
+      year={2025},
+      eprint={2508.04650},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2508.04650}, 
+}
+        </code></pre>
+      </div>
+    </section>
+    <!--End BibTex citation -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This page was built using the
+                <a
+                  href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                  target="_blank"
+                  >Academic Project Page Template</a
+                >
+                which was adopted from the <a
+                  href="https://nerfies.github.io"
+                  target="_blank"
+                  >Nerfies</a
+                > project page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

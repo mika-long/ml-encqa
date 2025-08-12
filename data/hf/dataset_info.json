@@ -1,0 +1,70 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "image_path": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "true_label": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "options": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "task": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "task_details": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "encoding": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "variable_type": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer_type": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "num_marks": {
+      "dtype": "int8",
+      "_type": "Value"
+    },
+    "num_categories": {
+      "dtype": "int8",
+      "_type": "Value"
+    },
+    "chart_spec": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "image": {
+      "_type": "Image"
+    },
+    "split": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "canary_guid": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}
