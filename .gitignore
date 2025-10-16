@@ -12,3 +12,8 @@ wheels/
 # data
 sample_data
 /svgs
+
+# temporary files
+.ipynb_checkpoints/*
+
+data/img/*
